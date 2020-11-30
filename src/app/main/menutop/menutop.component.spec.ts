@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NvabarComponent } from './nvabar.component';
+import { MenutopComponent } from './menutop.component';
 
-describe('NvabarComponent', () => {
-  let component: NvabarComponent;
-  let fixture: ComponentFixture<NvabarComponent>;
+describe('MenutopComponent', () => {
+  let component: MenutopComponent;
+  let fixture: ComponentFixture<MenutopComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NvabarComponent ]
+      declarations: [ MenutopComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NvabarComponent);
+    fixture = TestBed.createComponent(MenutopComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

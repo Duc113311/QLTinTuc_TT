@@ -32,7 +32,7 @@
                         <label for="" class="title_edit"> Quản lý danh mục</label>
                     </div>
                     <div class="col-md-2 titl_dm1">
-                        <a routerLink="create" routerLinkActive="router-link-active" type="button" class="btn btn-primary ceate" style="float: right;">
+                        <a routerLink="create" type="button" class="btn btn-primary ceate" style="float: right;">
                             <i class="fa fa-plus" aria-hidden="true"></i> Thêm mới
                         </a>
                     </div>
@@ -47,9 +47,8 @@
                                 <div class="form-group selecr_t">
                                     <label for="">Danh Mục</label>
                                     <select class="form-control" name="" id="">
-                                                <option>~~Tất cả~~</option>
-                                                <option>2</option>
-                                                <option>3</option>
+                                                <option></option>
+
                                               </select>
                                 </div>
                             </div>
@@ -111,41 +110,22 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr role="row" class="odd">
-                                            <td tabindex="0" class="sorting_1">1</td>
-                                            <td>240</td>
-                                            <td>Nhà Thiếu Nhi Đơn Vị Tỉnh Đoàn</td>
-                                            <td>Các ban bộ phận tỉnh đoàn</td>
-                                            <td>
+                                        <!-- <tr role="row" class="odd" *ngFor="let item of danhmucs;let i=index">
+
+                                            <td tabindex="0" class="sorting_1">{{i+1}}</td>
+                                            <td>{{item.idCategory}}</td>
+                                            <td>{{item.titleCategory}}</td>
+                                            <td>{{item.tendanhmuc}}</td>
+                                            <td *ngIf="item.trangthai=='1'">
                                                 <div class="btn-group btn-group-sm t_bor">
-                                                    <a href="#" class="btn btn-info-view">
+                                                    <a href="#" class="btn btn-info-view" data-toggle="modal" data-target="#myModal">
                                                         <i class="far fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div class="t_bor">
-                                                    <div class="btn-group btn-group-sm">
-                                                        <a href="#" class="btn btn-info-edit">
-                                                            <i class="far fa-edit"></i> Sửa
-                                                        </a>
-                                                    </div>
-                                                    <div class="btn-group btn-group-sm">
-                                                        <a href="#" class="btn btn-info-delete">
-                                                            <i class="fa fa-trash" aria-hidden="true"></i> Xóa
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr role="row" class="odd">
-                                            <td tabindex="0" class="sorting_1">2</td>
-                                            <td>240</td>
-                                            <td>Nhà Thiếu Nhi Đơn Vị Tỉnh Đoàn</td>
-                                            <td>Các ban bộ phận tỉnh đoàn</td>
-                                            <td>
+                                            <td *ngIf="item.trangthai!='1'">
                                                 <div class="btn-group btn-group-sm t_bor">
-                                                    <a href="#" class="btn btn-info">
+                                                    <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal">
                                                         <i class="fa fa-eye-slash" aria-hidden="true"></i>
                                                     </a>
                                                 </div>
@@ -153,33 +133,6 @@
                                             <td>
                                                 <div class="t_bor">
                                                     <div class="btn-group btn-group-sm">
-                                                        <a routerLink="edit" class="btn btn-info-edit">
-                                                            <i class="far fa-edit"></i> Sửa
-                                                        </a>
-                                                    </div>
-                                                    <div class="btn-group btn-group-sm">
-                                                        <a href="#" class="btn btn-info-delete">
-                                                            <i class="fa fa-trash" aria-hidden="true"></i> Xóa
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr role="row" class="odd">
-                                            <td tabindex="0" class="sorting_1">3</td>
-                                            <td>240</td>
-                                            <td>Nhà Thiếu Nhi Đơn Vị Tỉnh Đoàn</td>
-                                            <td>Các ban bộ phận tỉnh đoàn</td>
-                                            <td>
-                                                <div class="btn-group btn-group-sm t_bor">
-                                                    <a href="#" class="btn btn-info-view">
-                                                        <i class="far fa-eye"></i>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="t_bor">
-                                                    <div class="btn-group btn-group-sm">
                                                         <a href="#" class="btn btn-info-edit">
                                                             <i class="far fa-edit"></i> Sửa
                                                         </a>
@@ -191,7 +144,8 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                        </tr>
+                                        </tr> -->
+
                                     </tbody>
 
                                 </table>
@@ -219,6 +173,22 @@
                     </div>
                 </div>
                 <!-- /.card-body -->
+            </div>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                        </div>
+                        <div class="modal-body">
+                            <p>Bạn có muốn thay đổi trạng thái?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Yes</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 

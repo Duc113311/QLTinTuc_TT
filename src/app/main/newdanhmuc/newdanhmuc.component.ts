@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-edit',
-  templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.css']
+  selector: 'app-newdanhmuc',
+  templateUrl: './newdanhmuc.component.html',
+  styleUrls: ['./newdanhmuc.component.css']
 })
-export class EditComponent implements OnInit {
+export class NewdanhmucComponent implements OnInit {
+
 
   ImageUrl:string="/assets/default_img.png";
   fileToUpload: File=null;
@@ -20,23 +21,15 @@ export class EditComponent implements OnInit {
     this.registerForm = this.fb.group({
         title: ['', Validators.required],
         tieude: ['', Validators.required],
-        menu: ['', Validators.compose([
+        mota: ['', Validators.compose([
           Validators.required,
-          Validators.pattern("^[0-9]*$"),
+          Validators.maxLength(10),
         ])],
-        page: ['', Validators.compose([
-          Validators.required,
-          Validators.pattern("^[0-9]*$"),
-        ])],
-        sidebar: ['', Validators.compose([
-          Validators.required,
-          Validators.pattern("^[0-9]*$"),
-        ])],
-        footer: ['',Validators.compose([
-          Validators.required,
-          Validators.pattern("^[0-9]*$"),
-        ])],
+        key: ['', Validators.required],
+        description: ['', Validators.required],
+        date: ['', Validators.required,],
         Image:[''],
+
     });
   }
   get f(){return this.registerForm.controls;}
@@ -69,11 +62,4 @@ export class EditComponent implements OnInit {
       render.readAsDataURL(this.fileToUpload);
 
     }
-
-
-
-
-
-
-
-}
+  }

@@ -1,0 +1,234 @@
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 text-dark">Tin Tức</h1>
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                    <li class="breadcrumb-item active">Tin tức</li>
+                </ol>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="container-fluid bor">
+            <!-- title -->
+            <div class="title_n">
+                <div class="row">
+                    <div class="col-md-10 titl_dm">
+                        <label for="" class="title_edit">Bài Viết</label>
+                    </div>
+                    <div class="col-md-2 titl_dm1">
+                        <button type="button" class="btn btn-primary ceate btn_cr" style="float: right;border: 1px solid #f1e5d3;background-color: white; color: black;font-size: 14px;font-weight: bolder;">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                Thêm mới
+                            </button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="title_type title_n">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group selecr_t">
+                                    <label for="">Danh Mục</label>
+                                    <select class="form-control" name="" id="">
+                                      <option *ngFor="let item of categorys" [value]='item.rankCategory==1'>{{item.titleCategory}}</option>
+                                            </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group selecr_t">
+                                    <label for="">Trạng Thái</label>
+                                    <select class="form-control" name="" id="">
+                                              <option>~~Tất cả~~</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                            </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row bt_search">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary bt_finter" style="padding: 6px 24px;background-color: #35a57f; border: 1px solid #35a57f;">
+                                  <i class="fa fa-filter"></i> Lọc
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table_b timkiem">
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+
+                        <div class="row">
+                            <div class="col-sm-12 data_tbl">
+                                <table class="table table-bordered" style="font-size: 14px;color: #17608e;">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="check_tk"></div>
+                                            </th>
+                                            <th>STT</th>
+                                            <th style="width: 50%;">Tiêu Đề</th>
+                                            <th>Chuyên Mục</th>
+                                            <th>Ngày Đăng</th>
+                                            <th>Tài khoản</th>
+                                            <th>Trạng Thái</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-md-12" style="display: block;">
+                                                        Trên 6000 đoàn viên, thanh niên học sinh, được tập huấn kiến thức an toàn giao thông và kỹ thuật
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="t_bor">
+                                                            <div class="btn-group btn-group-sm">
+                                                                <a href="#" class="btn btn-info-edit">
+                                                                    <i class="far fa-edit"></i> Sửa
+                                                                </a>
+                                                            </div>
+                                                            <div class="btn-group btn-group-sm">
+                                                                <a href="#" class="btn btn-info-delete">
+                                                                    <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Đoàn thanh niên
+                                            </td>
+                                            <td>
+                                                20/20/2020
+                                            </td>
+                                            <td>
+                                                Admin
+                                            </td>
+                                            <td>
+                                                <button type="button" class="duyet_tt btn btn-primary">Đã duyệt</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-md-12" style="display: block;">
+                                                        Trên 6000 đoàn viên, thanh niên học sinh, được tập huấn kiến thức an toàn giao thông và kỹ thuật
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="t_bor">
+                                                            <div class="btn-group btn-group-sm">
+                                                                <a href="#" class="btn btn-info-edit">
+                                                                    <i class="far fa-edit"></i> Sửa
+                                                                </a>
+                                                            </div>
+                                                            <div class="btn-group btn-group-sm">
+                                                                <a href="#" class="btn btn-info-delete">
+                                                                    <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Đoàn thanh niên
+                                            </td>
+                                            <td>
+                                                20/20/2020
+                                            </td>
+                                            <td>
+                                                Admin
+                                            </td>
+                                            <td>
+                                                <button type="button" class="duyet_tt btn btn-primary">Đã duyệt</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-md-12" style="display: block;">
+                                                        Trên 6000 đoàn viên, thanh niên học sinh, được tập huấn kiến thức an toàn giao thông và kỹ thuật
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="t_bor_duyet">
+                                                            <div class="btn-group btn-group-sm">
+                                                                <a href="#" class="btn btn-info-edit">
+                                                                    <i class="far fa-edit"></i> Sửa
+                                                                </a>
+                                                            </div>
+                                                            <div class="btn-group btn-group-sm">
+                                                                <a href="#" class="btn btn-info-delete">
+                                                                    <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Đoàn thanh niên
+                                            </td>
+                                            <td>
+                                                20/20/2020
+                                            </td>
+                                            <td>
+                                                Admin
+                                            </td>
+                                            <td>
+                                                <button type="button" class="duyet_tt btn btn-primary">Đã duyệt</button>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /.card-body -->
+            </div>
+
+
+        </div>
+        <!-- /.row (main row) -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->

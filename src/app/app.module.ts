@@ -1,7 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ApiserveService } from './apiserve.service';
+
 
 const routes: Routes = [
   {
@@ -17,10 +21,13 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
-  exports: [RouterModule],
-  providers: [],
+
+  providers: [
+    ApiserveService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

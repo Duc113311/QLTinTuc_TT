@@ -1,27 +1,64 @@
 {
     "data": [{
-            "id": "1000",
-            "code": "f230fh0g3",
-            "name": "Bamboo Watch",
-            "description": "Product Description",
-            "image": "bamboo-watch.jpg",
-            "price": 65,
-            "category": "Accessories",
-            "quantity": 24,
-            "inventoryStatus": "INSTOCK",
-            "rating": 5
+            "id": "240",
+            "tieude": "Nhà thiếu nhi tỉnh",
+            "tendanhmuc": "Can cán bộ Tỉnh Đoàn",
+            "trangthai": "1",
+            "slug": "3-chương trình",
+            "menu": 2,
+            "page": 6,
+            "sidebar": 5,
+            "footer": "2",
+            "image": "black-watch.jpg"
         },
         {
-            "id": "1001",
-            "code": "nvklal433",
-            "name": "Black Watch",
-            "description": "Product Description",
-            "image": "black-watch.jpg",
-            "price": 72,
-            "category": "Accessories",
-            "quantity": 61,
-            "inventoryStatus": "INSTOCK",
-            "rating": 4
+            "id": "241",
+            "tieude": "Nghi Thức Hội",
+            "tendanhmuc": "Hội liên hiệp thanh niê",
+            "trangthai": "0",
+            "slug": "3-chương trình",
+            "menu": 2,
+            "page": 6,
+            "sidebar": 3,
+            "footer": 4,
+            "image": "black-watch.jpg"
+        },
+        {
+            "id": "242",
+            "tieude": "Tin tức hoạt động",
+            "tendanhmuc": "Đội thiếu niên tiền phong HCM",
+            "trangthai": "1",
+            "slug": "3-chương trình",
+            "menu": 2,
+            "page": 3,
+            "sidebar": 5,
+            "footer": 7,
+            "image": "black-watch.jpg"
+        },
+        {
+            "id": "243",
+            "tieude": "Các hội câu lạc bộ, trực thuộc",
+            "tendanhmuc": "Hội thanh niên Việt Nam",
+            "trangthai": "1",
+            "slug": "3-chương trình",
+            "menu": 2,
+            "page": 3,
+            "sidebar": 5,
+            "footer": 7,
+            "image": "black-watch.jpg"
+        },
+        {
+            "id": "244",
+            "tieude": "Bộ công an chính trị",
+            "tendanhmuc": "Pháp Luật Nhà Nước",
+            "trangthai": "0",
+            "slug": "3-chương trình",
+            "menu": 2,
+            "page": 3,
+            "sidebar": 5,
+            "footer": 7,
+            "image": "black-watch.jpg"
         }
+
     ]
 }

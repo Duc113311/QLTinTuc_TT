@@ -188,3 +188,24 @@ table.t_data {
 .input-group {
     width: 25%;
 }
+
+
+/* Tim kiếm */
+
+.timkiem .check_tk {
+    padding: 7px;
+    background-color: aqua;
+    border: none;
+}
+
+.timkiem .duyet_tt {
+    padding: 3px 9px;
+    font-size: 13px;
+    background-color: #a9a92e;
+    border: 1px solid #a9a92e;
+}
+
+.btn:hover {
+    color: white !important;
+    text-decoration: none;
+}
